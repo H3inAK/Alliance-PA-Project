@@ -155,7 +155,7 @@ export default function Sidebar({ activePage, isOpen, onClose, onNavigate }) {
                 <span className="tracking-[-0.01em]">{item.label}</span>
                 {item.label === "Appraisals" && pendingStat?.value && (
                   <span
-                    className="ml-auto text-[9px] font-semibold px-1.5 py-0.5 rounded-full"
+                    className="ml-auto text-[8px] font-semibold px-1.5 py-0.5 rounded-full"
                     style={{ backgroundColor: "rgba(255,255,255,0.15)", color: theme.sidebarText }}
                   >
                     {pendingStat.value}
