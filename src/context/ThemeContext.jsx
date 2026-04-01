@@ -1,6 +1,22 @@
 import { createContext, useContext, useState, useEffect } from "react";
 
 export const themes = {
+  capitalLedger: {
+    name: "Capital Ledger",
+    primary: "#0F766E",
+    primaryHover: "#115E59",
+    background: "#F4F7F8",
+    text: "#132A33",
+    card: "#FFFFFF",
+    muted: "#667985",
+    border: "#D9E2E7",
+    accent: "#DDEDEA",
+    sidebarBg: "#12313B",
+    sidebarText: "#E7F2F0",
+    sidebarActive: "#1A4A57",
+    navbarBg: "#FFFFFF",
+    highlight: "#EEF5F5",
+  },
   mossVelvet: {
     name: "Moss Velvet",
     primary: "#385144",
@@ -70,7 +86,7 @@ export const themes = {
 const ThemeContext = createContext(null);
 
 export function ThemeProvider({ children }) {
-  const [activeTheme, setActiveTheme] = useState("mossVelvet");
+  const [activeTheme, setActiveTheme] = useState("capitalLedger");
 
   const theme = themes[activeTheme];
 

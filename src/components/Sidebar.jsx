@@ -132,7 +132,7 @@ export default function Sidebar({ activePage, isOpen, onClose, onNavigate }) {
                   onNavigate(item.label);
                   onClose();
                 }}
-                className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-[11px] font-medium transition-all duration-200 group"
+                className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-[8px] font-medium transition-all duration-200 group"
                 style={{
                   backgroundColor:
                     isActive || hovered === item.label ? theme.sidebarActive : "transparent",
